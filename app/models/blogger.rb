@@ -5,17 +5,17 @@ class Blogger < ApplicationRecord
     # validate :name, uniqueness: true
     # validate :age, numericality: {greater_than: 0}
     # validate :bio, length: {minimum: 30}
-    def likes
-        self.posts.each do |post|
-            post.likes
-        end
-    end
+    # def likes
+    #     self.posts.each do |post|
+    #         post.likes
+    #     end
+    # end
   
-    def profile_page
-        puts "#{self.name}"
-        puts "#{self.bio}"
-        puts "#{self.age}"
+    # def profile_page
+    #     puts "#{self.name}"
+    #     puts "#{self.bio}"
+    #     puts "#{self.age}"
 
-        total_likes 
-    end
+    #     total_likes 
+    # end
 end

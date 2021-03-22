@@ -1,0 +1,9 @@
+destination show page 
+
+<p><%= @destination.name %> 
+
+<p><%= @destination.country %>
+
+<p><%= @destination.posts.each do |post|%>
+        <%= post.content %>
+        <% end %>
